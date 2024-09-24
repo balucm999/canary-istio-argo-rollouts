@@ -11,3 +11,4 @@ sudo mv kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
 
 kubectl argo rollouts version
 
+kubectl argo rollouts get rollout rollouts-demo -n istio-argo-rollouts -w

@@ -1,3 +1,8 @@
+note:
+after insatlling argo rollout controller and plugin then 1st we have to apply namespace and gateway yaml which is present cd.. and goto single-svc-vs-multiple-set and aplly one by one and lastly we should apply rollout and
+---imp---no need to maintain sepeare deployment yaml so instead of using deploymnet and rollout-for-deployment yaml use single rollout.yaml
+
+
 #install argo rollout controller
 
 kubectl create namespace argo-rollouts

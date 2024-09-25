@@ -1,8 +1,13 @@
 #install argo rollout controller
-kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-rollouts/stable/manifests/install.yaml
+
+kubectl create namespace argo-rollouts
+kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
+
+note:---IMP----install argo rollouts controller in argo-rollouts namespace only
+
+----------------------------------------
 
 #Install argorollout plugin for kubectl
-
 
 wget https://github.com/argoproj/argo-rollouts/releases/download/v1.7.2/kubectl-argo-rollouts-linux-amd64
 

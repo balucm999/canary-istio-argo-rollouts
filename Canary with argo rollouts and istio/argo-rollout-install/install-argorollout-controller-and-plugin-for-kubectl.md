@@ -1,3 +1,6 @@
+#install argo rollout controller
+kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-rollouts/stable/manifests/install.yaml
+
 #Install argorollout plugin for kubectl
 
 
